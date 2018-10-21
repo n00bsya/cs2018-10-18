@@ -37,9 +37,9 @@ class TaskC2 {
         String octal_Sum = Integer.toOctalString(Sum);
 
         System.out.println("DEC:" + a + "+" + b + "=" + Sum);
-        System.out.println("BIN:"+binary_a+"+"+binary_b+"="+binary_Sum);
-        System.out.println("HEX:"+hex_a+"+"+hex_b+"="+hex_Sum);
-        System.out.println("OCT:"+octal_a+"+"+octal_b+"="+octal_Sum);
+        System.out.println("BIN:" + binary_a + "+" + binary_b + "=" + binary_Sum);
+        System.out.println("HEX:" + hex_a + "+" + hex_b + "=" + hex_Sum);
+        System.out.println("OCT:" + octal_a + "+" + octal_b + "=" + octal_Sum);
 
     }
 
