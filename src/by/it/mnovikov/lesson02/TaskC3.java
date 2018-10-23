@@ -29,6 +29,31 @@ package by.it.mnovikov.lesson02;
 
 
 */
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Scanner;
+
 class TaskC3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int w_earth = sc.nextInt();
+        double w_mars = getWeight(w_earth);
+
+        System.out.println("Вес тела на марсе составит: " + w_mars);
+    }
+
+    private static double getWeight(int weight) {
+
+        double ffa1 = 9.81; //Ускорение свободного падения на Земле
+        double ffa2 = 3.86; //Ускорение свободного падения на Марсе
+        double k = ffa1 / ffa2;
+        double w_mars = weight / k;
+
+        double newDouble = new BigDecimal(w_mars).setScale(2, RoundingMode.HALF_UP).doubleValue();
+
+        return newDouble;
+
+    }
 
 }
