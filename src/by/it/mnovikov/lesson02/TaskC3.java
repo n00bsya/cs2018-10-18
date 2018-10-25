@@ -30,8 +30,6 @@ package by.it.mnovikov.lesson02;
 
 */
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.Scanner;
 
 class TaskC3 {
@@ -47,13 +45,9 @@ class TaskC3 {
 
         double ffa1 = 9.81; //Ускорение свободного падения на Земле
         double ffa2 = 3.86; //Ускорение свободного падения на Марсе
-        double k = ffa1 / ffa2;
-        double w_mars = weight / k;
+        double w_mars = weight / ffa1 * ffa2;
 
-        double newDouble = new BigDecimal(w_mars).setScale(2, RoundingMode.HALF_UP).doubleValue();
-
-        return newDouble;
-
+        return Math.round(w_mars*100)/100.0;
     }
 
 }
