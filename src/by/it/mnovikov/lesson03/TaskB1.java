@@ -27,7 +27,6 @@ strictfp class TaskB1 {
     public static  void main(String[] args) {
         double d = 0;
         double b = 0;
-        
         double o = 0;
         double h = 0;
         double f = 0;

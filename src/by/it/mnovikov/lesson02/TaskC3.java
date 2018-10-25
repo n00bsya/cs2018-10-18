@@ -45,9 +45,11 @@ class TaskC3 {
 
         double ffa1 = 9.81; //Ускорение свободного падения на Земле
         double ffa2 = 3.86; //Ускорение свободного падения на Марсе
-        double w_mars = weight / ffa1 * ffa2;
+        double k = ffa1 / ffa2;
+        double w_mars = weight / k;
 
-        return Math.round(w_mars*100)/100.0;
+        return (Math.round(w_mars * 100) / 100.0);
+
     }
 
 }
