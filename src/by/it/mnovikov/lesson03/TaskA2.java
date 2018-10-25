@@ -22,13 +22,13 @@ Lesson 03. Task A2. Стихотворение
 */
 class TaskA2 {
     public static void main(String[] args) {
-        String a = "Мое любимое стихотворение:\n";
-        String b = "Холоп венчанного солдата,\n";
-        String c = "Ты стоишь лавров Герострата\n";
-        String d = "Иль смерти немца Коцебу.\n";
-        String e = "А впрочем — мать твою е…у!\n";
+        String a = "Холоп венчанного солдата,\n";
+        String b = "Ты стоишь лавров Герострата\n";
+        String c = "Иль смерти немца Коцебу.\n";
+        String d = "А впрочем — мать твою е…у!\n";
 
-        System.out.println(a+"\n"+b+c+d+e);
+        System.out.println("Мое любимое стихотворение:");
+        System.out.println(a  + b + c + d );
 
     }
 

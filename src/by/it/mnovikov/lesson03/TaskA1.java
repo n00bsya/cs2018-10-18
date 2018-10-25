@@ -40,7 +40,8 @@ class TaskA1 {
         Scanner sc=new Scanner(System.in);
         int a = sc.nextInt(), b = sc.nextInt();
         System.out.println((a+b)+" "+(a-b)+" "+(a*b)+" "+(a/b)+" "+(a%b));
-        System.out.println((double)(a+b)+" "+(double)(a-b)+" "+(double)(a*b)+" "+((double)a/(double)b)+" "+(double)(a%b));
+        double a1 = (double)a; double b1 = (double)b;
+        System.out.println((a1+b1)+" "+(a1-b1)+" "+(a1*b1)+" "+(a1/b1)+" "+(a1%b1));
     }
 
 }
