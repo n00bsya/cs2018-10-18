@@ -1,5 +1,7 @@
 package by.it.mnovikov.lesson04;
 
+import java.util.Scanner;
+
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -37,6 +39,33 @@ package by.it.mnovikov.lesson04;
 
 */
 public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc = new Scanner(System.in);
+        double zp = sc.nextDouble();
+        double zpp = 0;
 
-
+        if (zp < 300 || zp > 3000)
+            System.out.println("Мы вам перезвоним!");
+        else {
+            for (int month = 0; month < 15; month++) {
+                if (zpp == 666) break;
+                switch (month) {
+                    case 1: System.out.println("За январь начислено $" + (1.5 * zp)); zpp = 1.5 * zp; break;
+                    case 2: System.out.println("За февраль начислено $" + (1.5 * zp)); zpp = 1.5 * zp; break;
+                    case 3: System.out.println("За март начислено $" + (1.5 * zp)); zpp = 1.5 * zp; break;
+                    case 4: System.out.println("За апрель начислено $" + (1.5 * zp)); zpp = 1.5 * zp; break;
+                    case 5: System.out.println("За май начислено $" + (1.5 * zp)); zpp = 1.5 * zp; break;
+                    case 6: System.out.println("За июнь начислено $" + zp); zpp = zp; break;
+                    case 7: System.out.println("За июль начислено $" + zp); zpp = zp; break;
+                    case 8: System.out.println("За август начислено $" + zp); zpp = zp; break;
+                    case 9: System.out.println("За сентябрь начислено $" + (1.5 * zp)); zpp = 1.5 * zp; break;
+                    case 10: System.out.println("За октябрь начислено $" + (1.5 * zp)); zpp = 1.5 * zp; break;
+                    case 11: System.out.println("За ноябрь начислено $" + (1.5 * zp)); zpp = 1.5 * zp; break;
+                    case 12: System.out.println("За декабрь начислено $" + (1.5 * zp)); zpp = 1.5 * zp; break;
+                    default: System.out.println("За месяц " + month + " начислено $0.0");
+                }
+            }
+        }
+    }
 }
