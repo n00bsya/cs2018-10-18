@@ -36,113 +36,66 @@ public class TaskC3 {
 
                 ResConvertToString(res);
 
-//                System.out.println(res);
             }
         }
     }
 
     private static void MnConvertToString(int a) {
         switch (a) {
-            case 2:
-                System.out.print("два");
-                break;
-            case 3:
-                System.out.print("три");
-                break;
-            case 4:
-                System.out.print("четыре");
-                break;
-            case 5:
-                System.out.print("пять");
-                break;
-            case 6:
-                System.out.print("шесть");
-                break;
-            case 7:
-                System.out.print("семь");
-                break;
-            case 8:
-                System.out.print("восемь");
-                break;
-            case 9:
-                System.out.print("девять");
-                break;
-            default:
-                System.out.print("десять");
-                break;
+            case 1: System.out.print("один"); break;
+            case 2: System.out.print("два"); break;
+            case 3: System.out.print("три"); break;
+            case 4: System.out.print("четыре"); break;
+            case 5: System.out.print("пять"); break;
+            case 6: System.out.print("шесть"); break;
+            case 7: System.out.print("семь"); break;
+            case 8: System.out.print("восемь"); break;
+            case 9: System.out.print("девять"); break;
+            case 10: System.out.print("десять"); break;
+            default: break;
         }
     }
 
     private static void ResConvertToString(int res) {
-        int ost = res - (res / 10) * 10;
-        int dstk = res - ost;
 
         if (res < 20) {
             switch (res) {
-                case 4:
-                    System.out.println("четыре");
-                    break;
-                case 6:
-                    System.out.println("шесть");
-                    break;
-                case 8:
-                    System.out.println("восемь");
-                    break;
-                case 9:
-                    System.out.println("девять");
-                    break;
-                case 10:
-                    System.out.println("десять");
-                    break;
-                case 12:
-                    System.out.println("двенадцать");
-                    break;
-                case 14:
-                    System.out.println("четырнадцать");
-                    break;
-                case 15:
-                    System.out.println("пятнадцать");
-                    break;
-                case 16:
-                    System.out.println("шестнадцать");
-                    break;
-                case 18:
-                    System.out.println("восемнадцать");
-                    break;
-                default:
-                    System.out.println();
-                    break;
+                case 4: System.out.println("четыре"); break;
+                case 6: System.out.println("шесть"); break;
+                case 8: System.out.println("восемь"); break;
+                case 9: System.out.println("девять"); break;
+                case 10: System.out.println("десять"); break;
+                case 12: System.out.println("двенадцать"); break;
+                case 14: System.out.println("четырнадцать"); break;
+                case 15: System.out.println("пятнадцать"); break;
+                case 16: System.out.println("шестнадцать"); break;
+                case 18: System.out.println("восемнадцать"); break;
+                default: System.out.println(); break;
             }
         } else {
-            switch (dstk) {
-                case 20:
-                    System.out.print("двадцать");
+
+            switch ((res/10)*10) {
+                case 20: System.out.print("двадцать ");
                     break;
-                case 30:
-                    System.out.print("тридцать");
+                case 30: System.out.print("тридцать ");
                     break;
-                case 40:
-                    System.out.print("сорок");
+                case 40: System.out.print("сорок ");
                     break;
-                case 50:
-                    System.out.print("пятьдесят");
+                case 50: System.out.print("пятьдесят ");
                     break;
-                case 60:
-                    System.out.print("шестьдесят");
+                case 60: System.out.print("шестьдесят ");
                     break;
-                case 70:
-                    System.out.print("семьдесят");
+                case 70: System.out.print("семьдесят ");
                     break;
-                case 80:
-                    System.out.print("восемьдесят");
+                case 80: System.out.print("восемьдесят ");
                     break;
-                case 90:
-                    System.out.print("девяносто");
+                case 90: System.out.print("девяносто ");
                     break;
-                default:
-                    System.out.print("сто");
+                default: System.out.print("сто ");
                     break;
             }
+            MnConvertToString(res%10);
+            System.out.println();
         }
 
     }
