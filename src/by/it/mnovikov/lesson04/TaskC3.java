@@ -35,11 +35,9 @@ public class TaskC3 {
                 int res = i * j;
 
                 ResConvertToString(res);
-
             }
         }
     }
-
     private static void MnConvertToString(int a) {
         switch (a) {
             case 1: System.out.print("один"); break;
@@ -55,9 +53,7 @@ public class TaskC3 {
             default: break;
         }
     }
-
     private static void ResConvertToString(int res) {
-
         if (res < 20) {
             switch (res) {
                 case 4: System.out.println("четыре"); break;
@@ -72,31 +68,21 @@ public class TaskC3 {
                 case 18: System.out.println("восемнадцать"); break;
                 default: System.out.println(); break;
             }
-        } else {
-
+        }
+        else {
             switch ((res/10)*10) {
-                case 20: System.out.print("двадцать ");
-                    break;
-                case 30: System.out.print("тридцать ");
-                    break;
-                case 40: System.out.print("сорок ");
-                    break;
-                case 50: System.out.print("пятьдесят ");
-                    break;
-                case 60: System.out.print("шестьдесят ");
-                    break;
-                case 70: System.out.print("семьдесят ");
-                    break;
-                case 80: System.out.print("восемьдесят ");
-                    break;
-                case 90: System.out.print("девяносто ");
-                    break;
-                default: System.out.print("сто ");
-                    break;
+                case 20: System.out.print("двадцать "); break;
+                case 30: System.out.print("тридцать "); break;
+                case 40: System.out.print("сорок "); break;
+                case 50: System.out.print("пятьдесят "); break;
+                case 60: System.out.print("шестьдесят "); break;
+                case 70: System.out.print("семьдесят "); break;
+                case 80: System.out.print("восемьдесят "); break;
+                case 90: System.out.print("девяносто "); break;
+                default: System.out.print("сто "); break;
             }
             MnConvertToString(res%10);
             System.out.println();
         }
-
     }
 }
