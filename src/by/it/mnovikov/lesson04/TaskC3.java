@@ -79,7 +79,7 @@ public class TaskC3 {
                 case 70: System.out.print("семьдесят "); break;
                 case 80: System.out.print("восемьдесят "); break;
                 case 90: System.out.print("девяносто "); break;
-                default: System.out.print("сто "); break;
+                default: System.out.print("сто"); break;
             }
             MnConvertToString(res%10);
             System.out.println();
