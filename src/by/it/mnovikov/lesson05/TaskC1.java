@@ -11,10 +11,18 @@ package by.it.mnovikov.lesson05;
 */
 
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskC1 {
     public static void main(String[] args) throws Exception
     {
+        int [] list = new int [20];
+        Scanner scan = new Scanner (System.in);
+
+        for (int i = 0; i < list.length; i++) {
+            list[i] = scan.nextInt();
+        }
+        
 
     }
 
