@@ -38,6 +38,7 @@ public class TaskC1 {
         Dog dog1 = new Dog(sc.next(), sc.nextInt(), sc.nextInt(), sc.nextDouble());
         Dog dog2 = new Dog(sc.next(), sc.nextInt(), sc.nextInt(), sc.nextDouble());
 
+        if (dog1.win(dog2)) {System.out.println(dog1.getName());
+        } else System.out.println(dog2.getName());
     }
-
 }
